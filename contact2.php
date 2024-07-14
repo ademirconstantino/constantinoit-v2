@@ -7,7 +7,7 @@
 if(isset($_POST['email'])) {
 	
     function died($error) {
-	$redirect = "http://constantinoit.it/contact.php";
+	$redirect = "http://wwww.constantinoit.com/contact.php";
 	header("location:$redirect");
     }
 	
@@ -52,7 +52,7 @@ if(isset($_POST['email'])) {
  
   }
  
-	$subject = 'Contato atraves do site ConstantinoIt.it';
+	$subject = 'Contato atraves do site ConstantinoIt.com';
 	$headers = "From: " . $nome . " <$email> \r\n";
 	$headers .= "CC: ademirconstantino@libero.it\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
@@ -60,7 +60,7 @@ if(isset($_POST['email'])) {
 	
 	$ademir = 'ademirconstantino@gmail.com';
 	mail($ademir, $subject, $mensagem, $headers);
-	$redirect = "http://constantinoit.it/thankyou.php?lang=" .$lang;
+	$redirect = "http://www.constantinoit.com/thankyou.php?lang=" .$lang;
 	header("location:$redirect");
 }
 ?>
