@@ -24,23 +24,22 @@
  $cit_json = file_get_contents($file);
  $site = json_decode($cit_json, true);
 ?>
-<html>
+<!DOCTYPE html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title><?php echo $site["header"]["website_title"] ?></title>
+    <title><?php echo $site["header"]["website_title"]?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo $site["header"]["website_description"] ?>">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="plugins/bootstrap-switch/build/css/bootstrap3/bootstrap-switch.min.css" media="screen" rel="stylesheet" />
+    <link href="plugins/bootstrap-switch/build/css/bootstrap3/bootstrap-switch.min.css" media="screen" rel="stylesheet"/>
     <link href="css/theme-style.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="#" id="colour-scheme" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
 	<link href="css/menu.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/icons/favicon.png">
-    <meta name="google-site-verification" content="<?php echo $site["header"]["google_site_verification"] ?>" />
+    <meta name="google-site-verification" content="<?php echo $site["header"]["google_site_verification"]?>"/>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	  <script>
 		  function myFunction() {
 			  var x = document.getElementById("myTopnav");
